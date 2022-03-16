@@ -1,0 +1,113 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    font-size: 1em;
+    text-align: center;
+}
+
+h2 {
+    color: #f2f2f2;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 0;
+    font-weight: 700;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    padding-bottom: 30px;
+}
+
+a {
+    color:#004241;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.sedans, .suvs, .luxury {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-flow: column wrap;
+    padding: 50px 30px;
+    text-align: left;
+}
+.sedans {
+    background-color: #e38826;
+}
+
+.suvs {
+    background-color: #006970; 
+}
+
+.luxury {
+    background-color: #004241;
+}
+
+.image {
+    padding-right: 60%;
+    padding-bottom: 30px;
+}
+
+input[type=button] {
+    width: 67%;
+    padding: 20px 10px;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.125em;
+    border: none;
+    border-radius: 35px;
+    text-align: center;
+  }
+
+.sedans input[type=button] {
+    color: #e38826;
+}
+
+.suvs input[type=button] {
+    color: #006970;
+}
+
+.luxury input[type=button] {
+    color: #004241;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+        flex-direction: row;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .sedans, .suvs, .luxury {
+        max-width: 250px;
+        flex-basis: 33%;
+    }
+
+    p {
+        line-height: 1.75em;
+    }
+
+}
